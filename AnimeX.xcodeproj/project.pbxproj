@@ -14,6 +14,14 @@
 		A2DB1A0E2BB9DB020080E161 /* AnimeXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A0D2BB9DB020080E161 /* AnimeXTests.swift */; };
 		A2DB1A182BB9DB020080E161 /* AnimeXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A172BB9DB020080E161 /* AnimeXUITests.swift */; };
 		A2DB1A1A2BB9DB020080E161 /* AnimeXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A192BB9DB020080E161 /* AnimeXUITestsLaunchTests.swift */; };
+		A2DB1A272BB9E3FF0080E161 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A262BB9E3FF0080E161 /* README.md */; };
+		A2DB1A2B2BB9E4D30080E161 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A2A2BB9E4D30080E161 /* .gitignore */; };
+		A2DB1A2E2BB9E58F0080E161 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A2D2BB9E58F0080E161 /* ParseSwift */; };
+		A2DB1A332BB9EB090080E161 /* ParseFacebookUtilsiOS in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A322BB9EB090080E161 /* ParseFacebookUtilsiOS */; };
+		A2DB1A352BB9EB090080E161 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A342BB9EB090080E161 /* ParseLiveQuery */; };
+		A2DB1A372BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
+		A2DB1A382BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
+		A2DB1A392BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,10 @@
 		A2DB1A132BB9DB020080E161 /* AnimeXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DB1A172BB9DB020080E161 /* AnimeXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXUITests.swift; sourceTree = "<group>"; };
 		A2DB1A192BB9DB020080E161 /* AnimeXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2DB1A262BB9E3FF0080E161 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A2DB1A2A2BB9E4D30080E161 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A2DB1A362BB9F0A20080E161 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		A2DB1A3B2BB9F48B0080E161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DB1A332BB9EB090080E161 /* ParseFacebookUtilsiOS in Frameworks */,
+				A2DB1A352BB9EB090080E161 /* ParseLiveQuery in Frameworks */,
+				A2DB1A2E2BB9E58F0080E161 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +89,9 @@
 		A2DB19F02BB9DB010080E161 = {
 			isa = PBXGroup;
 			children = (
+				A2DB1A2A2BB9E4D30080E161 /* .gitignore */,
+				A2DB1A262BB9E3FF0080E161 /* README.md */,
+				A2DB1A3A2BB9F1F20080E161 /* Config */,
 				A2DB19FB2BB9DB010080E161 /* AnimeX */,
 				A2DB1A0C2BB9DB020080E161 /* AnimeXTests */,
 				A2DB1A162BB9DB020080E161 /* AnimeXUITests */,
@@ -94,6 +112,7 @@
 		A2DB19FB2BB9DB010080E161 /* AnimeX */ = {
 			isa = PBXGroup;
 			children = (
+				A2DB1A3B2BB9F48B0080E161 /* Info.plist */,
 				A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */,
 				A2DB19FE2BB9DB010080E161 /* ContentView.swift */,
 				A2DB1A002BB9DB020080E161 /* Assets.xcassets */,
@@ -127,6 +146,14 @@
 			path = AnimeXUITests;
 			sourceTree = "<group>";
 		};
+		A2DB1A3A2BB9F1F20080E161 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A2DB1A362BB9F0A20080E161 /* Development.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +170,11 @@
 			dependencies = (
 			);
 			name = AnimeX;
+			packageProductDependencies = (
+				A2DB1A2D2BB9E58F0080E161 /* ParseSwift */,
+				A2DB1A322BB9EB090080E161 /* ParseFacebookUtilsiOS */,
+				A2DB1A342BB9EB090080E161 /* ParseLiveQuery */,
+			);
 			productName = AnimeX;
 			productReference = A2DB19F92BB9DB010080E161 /* AnimeX.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +247,10 @@
 				Base,
 			);
 			mainGroup = A2DB19F02BB9DB010080E161;
+			packageReferences = (
+				A2DB1A2C2BB9E58E0080E161 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				A2DB1A312BB9EB090080E161 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */,
+			);
 			productRefGroup = A2DB19FA2BB9DB010080E161 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DB1A372BB9F0A20080E161 /* Development.xcconfig in Resources */,
+				A2DB1A2B2BB9E4D30080E161 /* .gitignore in Resources */,
+				A2DB1A272BB9E3FF0080E161 /* README.md in Resources */,
 				A2DB1A042BB9DB020080E161 /* Preview Assets.xcassets in Resources */,
 				A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */,
 			);
@@ -240,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DB1A382BB9F0A20080E161 /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DB1A392BB9F0A20080E161 /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +338,7 @@
 /* Begin XCBuildConfiguration section */
 		A2DB1A1B2BB9DB020080E161 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -424,6 +466,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeX/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +495,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeX/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AnimeX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +626,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A2DB1A2C2BB9E58E0080E161 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+		A2DB1A312BB9EB090080E161 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-SDK-iOS-OSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2DB1A2D2BB9E58F0080E161 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DB1A2C2BB9E58E0080E161 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		A2DB1A322BB9EB090080E161 /* ParseFacebookUtilsiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DB1A312BB9EB090080E161 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseFacebookUtilsiOS;
+		};
+		A2DB1A342BB9EB090080E161 /* ParseLiveQuery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2DB1A312BB9EB090080E161 /* XCRemoteSwiftPackageReference "Parse-SDK-iOS-OSX" */;
+			productName = ParseLiveQuery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2DB19F12BB9DB010080E161 /* Project object */;
 }
