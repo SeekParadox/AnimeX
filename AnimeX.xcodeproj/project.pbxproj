@@ -22,6 +22,9 @@
 		A2DB1A372BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
 		A2DB1A382BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
 		A2DB1A392BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
+		A2DB1A412BBA07690080E161 /* AnimeXUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A402BBA07690080E161 /* AnimeXUser.swift */; };
+		A2DB1A432BBA082D0080E161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A422BBA082D0080E161 /* Post.swift */; };
+		A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A442BBA0B0A0080E161 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		A2DB1A2A2BB9E4D30080E161 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A2DB1A362BB9F0A20080E161 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		A2DB1A3B2BB9F48B0080E161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A2DB1A402BBA07690080E161 /* AnimeXUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXUser.swift; sourceTree = "<group>"; };
+		A2DB1A422BBA082D0080E161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A2DB1A442BBA0B0A0080E161 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		A2DB19FB2BB9DB010080E161 /* AnimeX */ = {
 			isa = PBXGroup;
 			children = (
+				A2DB1A3F2BBA07520080E161 /* Models */,
 				A2DB1A3B2BB9F48B0080E161 /* Info.plist */,
 				A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */,
 				A2DB19FE2BB9DB010080E161 /* ContentView.swift */,
@@ -152,6 +159,16 @@
 				A2DB1A362BB9F0A20080E161 /* Development.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		A2DB1A3F2BBA07520080E161 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2DB1A402BBA07690080E161 /* AnimeXUser.swift */,
+				A2DB1A422BBA082D0080E161 /* Post.swift */,
+				A2DB1A442BBA0B0A0080E161 /* Comment.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,8 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */,
 				A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */,
 				A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */,
+				A2DB1A412BBA07690080E161 /* AnimeXUser.swift in Sources */,
+				A2DB1A432BBA082D0080E161 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
