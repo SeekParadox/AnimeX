@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct FeedView: View {
+struct PopularView: View {
     
     
     var body: some View {
         VStack {
-            Text("Feed View")
+            Text("Popular View")
         }
     }
 }

@@ -35,6 +35,11 @@
 		A2DB1A562BBA3A710080E161 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A542BBA3A710080E161 /* FeedView.swift */; };
 		A2DB1A572BBA3A710080E161 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A542BBA3A710080E161 /* FeedView.swift */; };
 		A2DB1A592BBAE6FC0080E161 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A582BBAE6FC0080E161 /* SignUpView.swift */; };
+		A2DB1A5D2BBB28EE0080E161 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A5C2BBB28EE0080E161 /* MainView.swift */; };
+		A2DB1A5F2BBB29290080E161 /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A5E2BBB29290080E161 /* PopularView.swift */; };
+		A2DB1A612BBB30FD0080E161 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A602BBB30FD0080E161 /* PostView.swift */; };
+		A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A622BBB31540080E161 /* RecommendedView.swift */; };
+		A2DB1A652BBB32090080E161 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A642BBB32090080E161 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,11 @@
 		A2DB1A502BBA1F780080E161 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		A2DB1A542BBA3A710080E161 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A2DB1A582BBAE6FC0080E161 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		A2DB1A5C2BBB28EE0080E161 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A2DB1A5E2BBB29290080E161 /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		A2DB1A602BBB30FD0080E161 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		A2DB1A622BBB31540080E161 /* RecommendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedView.swift; sourceTree = "<group>"; };
+		A2DB1A642BBB32090080E161 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +201,11 @@
 			isa = PBXGroup;
 			children = (
 				A2DB1A542BBA3A710080E161 /* FeedView.swift */,
+				A2DB1A5C2BBB28EE0080E161 /* MainView.swift */,
+				A2DB1A5E2BBB29290080E161 /* PopularView.swift */,
+				A2DB1A602BBB30FD0080E161 /* PostView.swift */,
+				A2DB1A622BBB31540080E161 /* RecommendedView.swift */,
+				A2DB1A642BBB32090080E161 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,11 +367,16 @@
 				A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */,
 				A2DB1A552BBA3A710080E161 /* FeedView.swift in Sources */,
 				A2DB1A512BBA1F780080E161 /* AuthManager.swift in Sources */,
+				A2DB1A5D2BBB28EE0080E161 /* MainView.swift in Sources */,
+				A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */,
 				A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */,
 				A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */,
 				A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */,
 				A2DB1A412BBA07690080E161 /* User.swift in Sources */,
 				A2DB1A592BBAE6FC0080E161 /* SignUpView.swift in Sources */,
+				A2DB1A5F2BBB29290080E161 /* PopularView.swift in Sources */,
+				A2DB1A612BBB30FD0080E161 /* PostView.swift in Sources */,
+				A2DB1A652BBB32090080E161 /* ProfileView.swift in Sources */,
 				A2DB1A432BBA082D0080E161 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

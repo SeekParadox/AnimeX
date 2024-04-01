@@ -5,9 +5,7 @@
 //  Created by Michael Waller on 4/1/24.
 //
 
-import Foundation
 import SwiftUI
-
 
 struct SignupView: View {
     @EnvironmentObject var isAuthenticated: AuthManager
