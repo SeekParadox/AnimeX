@@ -17,6 +17,12 @@ class AuthManager: ObservableObject {
     
     init() {        
         isAuthenticated = User.current != nil
+ 
+        /**
+         User.logout() will log the current.user out for you to work on the login page
+         If logged in will have to restart the app 2x times for it to work
+         Please comment it out when you push your code up
+         **/
 //        User.logout() { result in
 //           
 //        }

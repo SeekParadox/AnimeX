@@ -19,7 +19,7 @@ struct Post: ParseObject {
     var ACL: ParseACL?
 
     // Custom properties
-    var author: String?
+    var author: User.ID?
     var body: String?
     var contentFile:  ParseFile?
 }

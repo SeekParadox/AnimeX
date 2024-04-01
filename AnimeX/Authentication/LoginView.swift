@@ -19,26 +19,31 @@ struct LoginView: View {
 
 
     var body: some View {
-        VStack {
-            TextField("Username", text: $username)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .autocapitalization(.none)
-                .padding()
-
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .autocapitalization(.none)
-                .padding()
-
-            Button("Login") {
-                loginUser()
+        NavigationView {
+            VStack {
+                TextField("Username", text: $username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .padding()
+                
+                SecureField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .padding()
+                
+                Button("Login") {
+                    loginUser()
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("Login Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                }
+                NavigationLink(destination: SignupView()) {
+                    Text("Sign Up")
+                }.padding()
+                
             }
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Login Failed"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
-            }
-            
-        }
-        .padding()
+            .padding()
+        }.navigationTitle("Login")
     }
     
     func loginUser() {
