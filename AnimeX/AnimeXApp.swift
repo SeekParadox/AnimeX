@@ -8,6 +8,7 @@
 import SwiftUI
 import ParseSwift
 
+
 @main
 struct AnimeXApp: App {
     
@@ -22,13 +23,19 @@ struct AnimeXApp: App {
             serverURL: URL(string: "https://parseapi.back4app.com"
                           )!)
     }
-  
+    
+    @StateObject private var authManager = AuthManager()
+    
     var body: some Scene {
     
         WindowGroup {
-    
-            ContentView()
+            if authManager.isAuthenticated {
+                FeedView()
+            } else {
+                LoginView()
+            }
         }
+        .environmentObject(authManager)
     }
 }
 
