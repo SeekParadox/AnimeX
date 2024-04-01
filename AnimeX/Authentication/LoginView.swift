@@ -5,9 +5,7 @@
 //  Created by Michael Waller on 3/31/24.
 //
 
-import Foundation
 import SwiftUI
-
 import ParseSwift
 
 struct LoginView: View {

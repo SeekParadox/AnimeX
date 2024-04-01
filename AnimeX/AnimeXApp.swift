@@ -30,7 +30,7 @@ struct AnimeXApp: App {
     
         WindowGroup {
             if authManager.isAuthenticated {
-                FeedView()
+                MainView()
             } else {
                 LoginView()
             }
