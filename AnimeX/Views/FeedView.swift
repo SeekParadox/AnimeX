@@ -16,8 +16,5 @@ struct FeedView: View {
         VStack {
             Text("LoggedIn")
         }
-        
-        
     }
-    
 }
