@@ -26,8 +26,6 @@
 		A2DB1A432BBA082D0080E161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A422BBA082D0080E161 /* Post.swift */; };
 		A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A442BBA0B0A0080E161 /* Comment.swift */; };
 		A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A4C2BBA1EEC0080E161 /* LoginView.swift */; };
-		A2DB1A4E2BBA1EEC0080E161 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A4C2BBA1EEC0080E161 /* LoginView.swift */; };
-		A2DB1A4F2BBA1EEC0080E161 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A4C2BBA1EEC0080E161 /* LoginView.swift */; };
 		A2DB1A512BBA1F780080E161 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A502BBA1F780080E161 /* AuthManager.swift */; };
 		A2DB1A522BBA1F780080E161 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A502BBA1F780080E161 /* AuthManager.swift */; };
 		A2DB1A532BBA1F780080E161 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A502BBA1F780080E161 /* AuthManager.swift */; };
@@ -40,6 +38,8 @@
 		A2DB1A612BBB30FD0080E161 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A602BBB30FD0080E161 /* PostView.swift */; };
 		A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A622BBB31540080E161 /* RecommendedView.swift */; };
 		A2DB1A652BBB32090080E161 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A642BBB32090080E161 /* ProfileView.swift */; };
+		A2DB1A682BBB5F2C0080E161 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A672BBB5F2C0080E161 /* loginViewModel.swift */; };
+		A2DB1A6A2BBB62B70080E161 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A692BBB62B70080E161 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +86,8 @@
 		A2DB1A602BBB30FD0080E161 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A2DB1A622BBB31540080E161 /* RecommendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedView.swift; sourceTree = "<group>"; };
 		A2DB1A642BBB32090080E161 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A2DB1A672BBB5F2C0080E161 /* loginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
+		A2DB1A692BBB62B70080E161 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				A2DB1A472BBA1E990080E161 /* Authentication */,
-				A2DB1A462BBA1E5C0080E161 /* Views */,
 				A2DB1A3F2BBA07520080E161 /* Models */,
+				A2DB1A462BBA1E5C0080E161 /* Views */,
+				A2DB1A662BBB5EBF0080E161 /* ViewModels */,
 				A2DB1A3B2BB9F48B0080E161 /* Info.plist */,
 				A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */,
 				A2DB19FE2BB9DB010080E161 /* ContentView.swift */,
@@ -213,11 +216,36 @@
 		A2DB1A472BBA1E990080E161 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				A2DB1A4C2BBA1EEC0080E161 /* LoginView.swift */,
+				A2DB1A6C2BBB66BE0080E161 /* ViewModels */,
+				A2DB1A6B2BBB66A50080E161 /* Views */,
 				A2DB1A502BBA1F780080E161 /* AuthManager.swift */,
-				A2DB1A582BBAE6FC0080E161 /* SignUpView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A2DB1A662BBB5EBF0080E161 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A2DB1A6B2BBB66A50080E161 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2DB1A4C2BBA1EEC0080E161 /* LoginView.swift */,
+				A2DB1A582BBAE6FC0080E161 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2DB1A6C2BBB66BE0080E161 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2DB1A692BBB62B70080E161 /* SignUpViewModel.swift */,
+				A2DB1A672BBB5F2C0080E161 /* loginViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,12 +394,14 @@
 			files = (
 				A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */,
 				A2DB1A552BBA3A710080E161 /* FeedView.swift in Sources */,
+				A2DB1A6A2BBB62B70080E161 /* SignUpViewModel.swift in Sources */,
 				A2DB1A512BBA1F780080E161 /* AuthManager.swift in Sources */,
 				A2DB1A5D2BBB28EE0080E161 /* MainView.swift in Sources */,
 				A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */,
 				A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */,
 				A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */,
 				A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */,
+				A2DB1A682BBB5F2C0080E161 /* loginViewModel.swift in Sources */,
 				A2DB1A412BBA07690080E161 /* User.swift in Sources */,
 				A2DB1A592BBAE6FC0080E161 /* SignUpView.swift in Sources */,
 				A2DB1A5F2BBB29290080E161 /* PopularView.swift in Sources */,
@@ -386,7 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DB1A562BBA3A710080E161 /* FeedView.swift in Sources */,
-				A2DB1A4E2BBA1EEC0080E161 /* LoginView.swift in Sources */,
 				A2DB1A522BBA1F780080E161 /* AuthManager.swift in Sources */,
 				A2DB1A0E2BB9DB020080E161 /* AnimeXTests.swift in Sources */,
 			);
@@ -397,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2DB1A1A2BB9DB020080E161 /* AnimeXUITestsLaunchTests.swift in Sources */,
-				A2DB1A4F2BBA1EEC0080E161 /* LoginView.swift in Sources */,
 				A2DB1A182BB9DB020080E161 /* AnimeXUITests.swift in Sources */,
 				A2DB1A572BBA3A710080E161 /* FeedView.swift in Sources */,
 				A2DB1A532BBA1F780080E161 /* AuthManager.swift in Sources */,
