@@ -34,12 +34,7 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 * User can follow their favorite anime(s) official/fanpage accounts and select notification frequency
 * User can receive anime recommendations based on the genres they follow
 * User can find popular series to read or watch
-
-**Optional Nice-to-have Stories**
-
-* User can customize their app theme and layout
-* User can create and join anime-related groups or communities
-* User can participate in polls and surveys related to anime and manga
+* User can make posts
 
 ### 2. Screen Archetypes
 
@@ -67,41 +62,46 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 **Tab Navigation** (Tab to Screen)
 
-- [x] Home Feed
-- [x] Profile
-- [ ] Notifications
-- [ ] Settings
+- [x] Feed Page
+- [X] Popular Page
+- [x] Post Page 
+- [X] Recommendation Page 
+- [x] Profile Page 
 
 **Flow Navigation** (Screen to Screen)
 
 - [x] **Login Screen**
-  * Leads to **Main Page** after successful login
+  * Leads to **Feed Page** after successful login
 - [x] **Sign Up Screen**
-  * Leads to **Main Page** after successful account creation
-- [x] **Main Page**
-  * Leads to **Profile Screen** when tapping on user's profile
-  * Leads to **Search Screen** when tapping on search bar
-  * Leads to **Creation Screen** when tapping on create post button
-- [x] **Profile Screen**
-  * Leads to **Settings Screen** when tapping on settings icon
-- [x] **Search Screen**
-  * Leads to **Profile Screen** when tapping on a user's profile
-- [x] **Creation Screen**
-  * Leads back to **Main Page** after creating a post
-- [x] **Settings Screen**
-  * Leads back to **Profile Screen** after changing settings
+  * Leads to **Feed Page** after successful account creation
+- [x] **Feed Page**
+- [x] **Popular page**
+- [x] **Recommendations page** 
+- [x] **Profile Page**
+- [x] **Post Page**
+ * Leads to **Profile Page** after successful post
+
+  
+     
+1.⁠ ⁠Log in (Zamin)
+2.⁠ ⁠Create Account (Zamin)
+4.⁠ ⁠Popular (Brenna)
+5.⁠ ⁠Anime Recommendations (Alyssa)
+6.⁠ ⁠Feed (Michael)
+7.⁠ ⁠Post (Michael)
+9.⁠ ⁠Profile (Eric)
 
 ## Wireframes
 
 [Add picture of your hand sketched wireframes in this section]
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
 ## Schema 
 
+[Add schema after we finish DB]
+
 ### Models
+
+[Add models after we finish DB]
 
 **User**
 | Property   | Type   | Description                                    |
@@ -148,6 +148,7 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
   - `[POST] /signup` - create a new user account
 - Main Page
   - `[GET] /posts` - get all posts for the user's feed
+  - `[GET] /userPosts` - get all the posts the logged-in user has made
   - `[GET] /recommendations` - get anime recommendations for the user
   - `[GET] /popular` - get popular anime series
 - Profile Screen
@@ -165,6 +166,3 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
   - `[POST] /post/:id/comment` - add a comment to a post
 - Settings Screen
   - `[PUT] /user/settings` - update user settings
-
-[Create basic snippets for each Parse network request]
-[OPTIONAL: List endpoints if using existing API such as Yelp]
