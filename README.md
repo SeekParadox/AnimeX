@@ -91,44 +91,41 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 ### Models
 
-[Add models after we finish DB]
-
 **User**
-| Property   | Type   | Description                                    |
-|------------|--------|------------------------------------------------|
-| username   | String | unique id for the user (default field)         |
-| password   | String | user's password for login authentication       |
-| email      | String | user's email address                           |
-| dateOfBirth| Date   | user's date of birth                           |
-| createdAt  | Date   | date when the user account was created         |
+| Property   | Type   | Description                                      |
+|------------|--------|--------------------------------------------------|
+| id         | number | user_id                                          |
+| username   | String | unique id for the user (default field)           |
+| password   | String | user's password for login authentication         |
+| email      | String | user's email address                             |
+| createdAt  | Date   | date when the user account was created           |
 
 **Post**
 | Property   | Type     | Description                                    |
 |------------|----------|------------------------------------------------|
-| objectId   | String   | unique id for the user post (default field)    |
-| author     | Pointer to User| post author                              |
+| id         | number   | unique id for the user post (default field)    |
+| user_id    | Number|fk| foreign key to user that made post             |
 | image      | File     | image that user posts                          |
 | caption    | String   | image caption by author                        |
-| commentsCount| Number | number of comments on the post                 |
 | likesCount | Number   | number of likes for the post                   |
 | createdAt  | Date     | date when post was created                     |
 
 **Comment**
 | Property   | Type     | Description                                    |
 |------------|----------|------------------------------------------------|
-| objectId   | String   | unique id for the comment (default field)      |
-| author     | Pointer to User| comment author                           |
-| post       | Pointer to Post| post that the comment refers to           |
+| id         | number   | unique id for the comment (default field)      |
+| user_id    | Number|fk| comment author                                 |
+| post_id    | Number|fk| foreign key to post                            |
 | text       | String   | content of the comment                         |
 | createdAt  | Date     | date when comment was created                  |
 
 **Follow**
-| Property   | Type     | Description                                    |
-|------------|----------|------------------------------------------------|
-| objectId   | String   | unique id for the follow action (default field)|
-| follower   | Pointer to User| user who is following                    |
-| followee   | Pointer to User| user being followed                      |
-| createdAt  | Date     | date when follow action occurred               |
+| Property           | Type      | Description                           |
+|--------------------|-----------|---------------------------------------|
+| id                 | number    | follow_id                             |
+| follower_user_id   | number|fk | user who is following                 |
+| followed_user_id   | number|fk | user being followed                   |
+| createdAt          | Date      | date when follow action occurred      |
 
 ### Networking
 
