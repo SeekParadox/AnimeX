@@ -79,7 +79,7 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 - [x] **Recommendations page** 
 - [x] **Profile Page**
 - [x] **Post Page**
- * Leads to **Profile Page** after successful post
+  * Leads to **Profile Page** after successful post
 
   
      
