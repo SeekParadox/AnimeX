@@ -81,16 +81,6 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 - [x] **Post Page**
   * Leads to **Profile Page** after successful post
 
-  
-     
-1.⁠ ⁠Log in (Zamin)
-2.⁠ ⁠Create Account (Zamin)
-4.⁠ ⁠Popular (Brenna)
-5.⁠ ⁠Anime Recommendations (Alyssa)
-6.⁠ ⁠Feed (Michael)
-7.⁠ ⁠Post (Michael)
-9.⁠ ⁠Profile (Eric)
-
 ## Wireframes
 
 ![hand sketched wireframe](https://github.com/Remote-Control-Allegators/AnimeX/blob/main/wireframe.jpg)
