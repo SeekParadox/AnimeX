@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8546CC0E2BC178DC00673362 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8546CC0D2BC178DC00673362 /* Development.xcconfig */; };
+		8546CC102BC178F800673362 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546CC0F2BC178F800673362 /* Popular.swift */; };
 		A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */; };
 		A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FE2BB9DB010080E161 /* ContentView.swift */; };
 		A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A002BB9DB020080E161 /* Assets.xcassets */; };
@@ -19,9 +21,6 @@
 		A2DB1A2E2BB9E58F0080E161 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A2D2BB9E58F0080E161 /* ParseSwift */; };
 		A2DB1A332BB9EB090080E161 /* ParseFacebookUtilsiOS in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A322BB9EB090080E161 /* ParseFacebookUtilsiOS */; };
 		A2DB1A352BB9EB090080E161 /* ParseLiveQuery in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB1A342BB9EB090080E161 /* ParseLiveQuery */; };
-		A2DB1A372BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
-		A2DB1A382BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
-		A2DB1A392BB9F0A20080E161 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */; };
 		A2DB1A412BBA07690080E161 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A402BBA07690080E161 /* User.swift */; };
 		A2DB1A432BBA082D0080E161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A422BBA082D0080E161 /* Post.swift */; };
 		A2DB1A452BBA0B0A0080E161 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB1A442BBA0B0A0080E161 /* Comment.swift */; };
@@ -60,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8546CC0D2BC178DC00673362 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../Desktop/Development.xcconfig; sourceTree = "<group>"; };
+		8546CC0F2BC178F800673362 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
 		A2DB19F92BB9DB010080E161 /* AnimeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXApp.swift; sourceTree = "<group>"; };
 		A2DB19FE2BB9DB010080E161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 		A2DB1A192BB9DB020080E161 /* AnimeXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A2DB1A262BB9E3FF0080E161 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A2DB1A2A2BB9E4D30080E161 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		A2DB1A362BB9F0A20080E161 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		A2DB1A3B2BB9F48B0080E161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A2DB1A402BBA07690080E161 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A2DB1A422BBA082D0080E161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		A2DB1A3A2BB9F1F20080E161 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				A2DB1A362BB9F0A20080E161 /* Development.xcconfig */,
+				8546CC0D2BC178DC00673362 /* Development.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -196,6 +196,7 @@
 				A2DB1A402BBA07690080E161 /* User.swift */,
 				A2DB1A422BBA082D0080E161 /* Post.swift */,
 				A2DB1A442BBA0B0A0080E161 /* Comment.swift */,
+				8546CC0F2BC178F800673362 /* Popular.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,11 +362,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DB1A372BB9F0A20080E161 /* Development.xcconfig in Resources */,
 				A2DB1A2B2BB9E4D30080E161 /* .gitignore in Resources */,
 				A2DB1A272BB9E3FF0080E161 /* README.md in Resources */,
 				A2DB1A042BB9DB020080E161 /* Preview Assets.xcassets in Resources */,
 				A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */,
+				8546CC0E2BC178DC00673362 /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DB1A382BB9F0A20080E161 /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +381,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2DB1A392BB9F0A20080E161 /* Development.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +397,7 @@
 				A2DB1A512BBA1F780080E161 /* AuthManager.swift in Sources */,
 				A2DB1A5D2BBB28EE0080E161 /* MainView.swift in Sources */,
 				A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */,
+				8546CC102BC178F800673362 /* Popular.swift in Sources */,
 				A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */,
 				A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */,
 				A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */,
@@ -450,7 +450,6 @@
 /* Begin XCBuildConfiguration section */
 		A2DB1A1B2BB9DB020080E161 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2DB1A362BB9F0A20080E161 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
