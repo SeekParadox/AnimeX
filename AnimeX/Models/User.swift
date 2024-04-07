@@ -9,12 +9,12 @@ final class User: ParseUser {
     var username: String?
     var email: String?
     var emailVerified: Bool?
+    var updatedAt: Date?
     var password: String?
     var authData: [String : [String : String]?]?
     var originalData: Data?
     var objectId: String?
     var createdAt: Date?
-    var updatedAt: Date?    
     var ACL: ParseSwift.ParseACL?
     var DOB: Date?
     var image: ParseFile?
