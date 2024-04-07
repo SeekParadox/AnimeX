@@ -28,33 +28,31 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 **Required Must-have Stories**
 
-- [ ] User can create an account with their email, username, DOB, and password
+- [X] User can create an account with their email, username, DOB, and password
 - [X] User can sign in and store their session/cookie information for a persistent connection
-- [ ] User can manage their profile by updating username, profile picture, bio, and interests
-- [ ] User can follow their favorite anime(s) official/fanpage accounts and select notification frequency
-- [ ] User can receive anime recommendations based on the genres they follow
-- [ ] User can find popular series to read or watch
-- [ ] User can make posts
+- [X] User can manage their profile by updating profile picture and bio
+- [X] User can follow their favorite anime(s) official/fanpage accounts and select notification frequency
+- [X] User can receive anime recommendations based on the genres they follow
+- [X] User can find popular series to read or watch
+- [X] User can make posts
 
 ### 2. Screen Archetypes
 
-- [ ] **Login Screen**
+- [X] **Login Screen**
   * User can login to their account(s)
   * User can sign up for an account
   * User can register
-- [ ] **Stream**
+- [X] **Stream**
   * User can scroll through their feed of posts from accounts they follow
   * User can like and comment on posts made by accounts they follow
-- [ ] **Search**
+- [X] **Search**
   * User can search for accounts they would like to follow
-- [ ] **Creation**
+- [X] **Creation**
   * Users can create new posts
-- [ ] **Profile**
+- [X] **Profile**
   * Users can manage their profiles
-- [ ] **Settings**
-  * Users can decide to change their mode(s)
-- [ ] **Main Page**
-  * User can see the posts
+- [X] **Main Page**
+  * User can see posts
   * User can search for series and accounts
   * User can view series recommendations and popular series
 
@@ -62,23 +60,23 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 **Tab Navigation** (Tab to Screen)
 
-- [ ] Feed Page
-- [ ] Popular Page
-- [ ] Post Page 
-- [ ] Recommendation Page 
-- [ ] Profile Page 
+- [X] Feed Page
+- [X] Popular Page
+- [X] Post Page 
+- [X] Recommendation Page 
+- [X] Profile Page 
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] **Login Screen**
+- [X] **Login Screen**
   * Leads to **Feed Page** after successful login
-- [ ] **Sign Up Screen**
+- [X] **Sign Up Screen**
   * Leads to **Feed Page** after successful account creation
-- [ ] **Feed Page**
-- [ ] **Popular page**
-- [ ] **Recommendations page** 
-- [ ] **Profile Page**
-- [ ] **Post Page**
+- [X] **Feed Page**
+- [X] **Popular page**
+- [X] **Recommendations page** 
+- [X] **Profile Page**
+- [X] **Post Page**
   * Leads to **Profile Page** after successful post
 
 ## Wireframes
@@ -104,10 +102,9 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 | Property   | Type     | Description                                    |
 |------------|----------|------------------------------------------------|
 | id         | number   | unique id for the user post (default field)    |
-| user_id    | Number|fk| foreign key to user that made post             |
-| image      | File     | image that user posts                          |
+| user       | Number|fk| foreign key to user that made post             |
+| body       | String   | Body of the post                               |
 | caption    | String   | image caption by author                        |
-| likesCount | Number   | number of likes for the post                   |
 | createdAt  | Date     | date when post was created                     |
 
 **Comment**

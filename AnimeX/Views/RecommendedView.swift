@@ -49,7 +49,7 @@ struct RecommendedView: View {
                     }
                 }
             }
-            .navigationTitle("Suggested Manhwa")
+            .navigationTitle("Recommended")
             .padding(.top, 20)
         }
     }
