@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		296547D32BC1CDA000753FFA /* Recommended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296547D22BC1CDA000753FFA /* Recommended.swift */; };
 		8546CC102BC178F800673362 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546CC0F2BC178F800673362 /* Popular.swift */; };
+		A21BC1012BC2174F00C8946A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1002BC2174F00C8946A /* FeedViewModel.swift */; };
+		A21BC1032BC2178B00C8946A /* UserFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1022BC2178B00C8946A /* UserFollow.swift */; };
+		A21BC10C2BC3312900C8946A /* Config in Resources */ = {isa = PBXBuildFile; fileRef = A21BC10B2BC3312900C8946A /* Config */; };
 		A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */; };
 		A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FE2BB9DB010080E161 /* ContentView.swift */; };
 		A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A002BB9DB020080E161 /* Assets.xcassets */; };
@@ -61,6 +64,9 @@
 /* Begin PBXFileReference section */
 		296547D22BC1CDA000753FFA /* Recommended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommended.swift; sourceTree = "<group>"; };
 		8546CC0F2BC178F800673362 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
+		A21BC1002BC2174F00C8946A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = AnimeX/ViewModels/FeedViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A21BC1022BC2178B00C8946A /* UserFollow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollow.swift; sourceTree = "<group>"; };
+		A21BC10B2BC3312900C8946A /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
 		A2DB19F92BB9DB010080E161 /* AnimeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXApp.swift; sourceTree = "<group>"; };
 		A2DB19FE2BB9DB010080E161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +124,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21BC1062BC32ED300C8946A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A21BC1072BC3305C00C8946A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A21BC1002BC2174F00C8946A /* FeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A2DB19F02BB9DB010080E161 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +148,7 @@
 				A2DB1A0C2BB9DB020080E161 /* AnimeXTests */,
 				A2DB1A162BB9DB020080E161 /* AnimeXUITests */,
 				A2DB19FA2BB9DB010080E161 /* Products */,
+				A21BC1062BC32ED300C8946A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +165,11 @@
 		A2DB19FB2BB9DB010080E161 /* AnimeX */ = {
 			isa = PBXGroup;
 			children = (
+				A21BC10B2BC3312900C8946A /* Config */,
 				A2DB1A472BBA1E990080E161 /* Authentication */,
 				A2DB1A3F2BBA07520080E161 /* Models */,
 				A2DB1A462BBA1E5C0080E161 /* Views */,
+				A21BC1072BC3305C00C8946A /* ViewModels */,
 				A2DB1A3B2BB9F48B0080E161 /* Info.plist */,
 				A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */,
 				A2DB19FE2BB9DB010080E161 /* ContentView.swift */,
@@ -188,6 +212,7 @@
 				A2DB1A442BBA0B0A0080E161 /* Comment.swift */,
 				8546CC0F2BC178F800673362 /* Popular.swift */,
 				296547D22BC1CDA000753FFA /* Recommended.swift */,
+				A21BC1022BC2178B00C8946A /* UserFollow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -349,6 +374,7 @@
 				A2DB1A2B2BB9E4D30080E161 /* .gitignore in Resources */,
 				A2DB1A272BB9E3FF0080E161 /* README.md in Resources */,
 				A2DB1A042BB9DB020080E161 /* Preview Assets.xcassets in Resources */,
+				A21BC10C2BC3312900C8946A /* Config in Resources */,
 				A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +409,7 @@
 				A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */,
 				8546CC102BC178F800673362 /* Popular.swift in Sources */,
 				A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */,
+				A21BC1012BC2174F00C8946A /* FeedViewModel.swift in Sources */,
 				A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */,
 				A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */,
 				A2DB1A682BBB5F2C0080E161 /* loginViewModel.swift in Sources */,
@@ -390,6 +417,7 @@
 				A2DB1A592BBAE6FC0080E161 /* SignUpView.swift in Sources */,
 				A2DB1A5F2BBB29290080E161 /* PopularView.swift in Sources */,
 				A2DB1A612BBB30FD0080E161 /* PostView.swift in Sources */,
+				A21BC1032BC2178B00C8946A /* UserFollow.swift in Sources */,
 				A2DB1A652BBB32090080E161 /* ProfileView.swift in Sources */,
 				A2DB1A432BBA082D0080E161 /* Post.swift in Sources */,
 			);
