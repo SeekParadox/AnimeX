@@ -12,7 +12,6 @@ struct LoginView: View {
     @StateObject private var viewModel = LoginViewModel()
     @EnvironmentObject var authManager: AuthManager
 
-
     var body: some View {
         NavigationView {
             VStack {

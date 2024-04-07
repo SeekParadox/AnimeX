@@ -3,7 +3,6 @@
 //  AnimeX
 //
 //  Created by Alyssa Yesilyurt on 4/6/24.
-//
 
 import Foundation
 
