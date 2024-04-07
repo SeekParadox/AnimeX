@@ -11,7 +11,8 @@
 		8546CC102BC178F800673362 /* Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546CC0F2BC178F800673362 /* Popular.swift */; };
 		A21BC1012BC2174F00C8946A /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1002BC2174F00C8946A /* FeedViewModel.swift */; };
 		A21BC1032BC2178B00C8946A /* UserFollow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1022BC2178B00C8946A /* UserFollow.swift */; };
-		A21BC10C2BC3312900C8946A /* Config in Resources */ = {isa = PBXBuildFile; fileRef = A21BC10B2BC3312900C8946A /* Config */; };
+		A21BC1122BC35CD400C8946A /* PostVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1112BC35CD400C8946A /* PostVIewModel.swift */; };
+		A21BC1142BC35D9300C8946A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BC1132BC35D9300C8946A /* ImagePicker.swift */; };
 		A2DB19FD2BB9DB010080E161 /* AnimeXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */; };
 		A2DB19FF2BB9DB010080E161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DB19FE2BB9DB010080E161 /* ContentView.swift */; };
 		A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DB1A002BB9DB020080E161 /* Assets.xcassets */; };
@@ -66,7 +67,8 @@
 		8546CC0F2BC178F800673362 /* Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popular.swift; sourceTree = "<group>"; };
 		A21BC1002BC2174F00C8946A /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = AnimeX/ViewModels/FeedViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A21BC1022BC2178B00C8946A /* UserFollow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollow.swift; sourceTree = "<group>"; };
-		A21BC10B2BC3312900C8946A /* Config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Config; sourceTree = "<group>"; };
+		A21BC1112BC35CD400C8946A /* PostVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVIewModel.swift; sourceTree = "<group>"; };
+		A21BC1132BC35D9300C8946A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A2DB19F92BB9DB010080E161 /* AnimeX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DB19FC2BB9DB010080E161 /* AnimeXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeXApp.swift; sourceTree = "<group>"; };
 		A2DB19FE2BB9DB010080E161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				A21BC1002BC2174F00C8946A /* FeedViewModel.swift */,
+				A21BC1112BC35CD400C8946A /* PostVIewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 		A2DB19FB2BB9DB010080E161 /* AnimeX */ = {
 			isa = PBXGroup;
 			children = (
-				A21BC10B2BC3312900C8946A /* Config */,
 				A2DB1A472BBA1E990080E161 /* Authentication */,
 				A2DB1A3F2BBA07520080E161 /* Models */,
 				A2DB1A462BBA1E5C0080E161 /* Views */,
@@ -175,6 +177,7 @@
 				A2DB19FE2BB9DB010080E161 /* ContentView.swift */,
 				A2DB1A002BB9DB020080E161 /* Assets.xcassets */,
 				A2DB1A022BB9DB020080E161 /* Preview Content */,
+				A21BC1132BC35D9300C8946A /* ImagePicker.swift */,
 			);
 			path = AnimeX;
 			sourceTree = "<group>";
@@ -374,7 +377,6 @@
 				A2DB1A2B2BB9E4D30080E161 /* .gitignore in Resources */,
 				A2DB1A272BB9E3FF0080E161 /* README.md in Resources */,
 				A2DB1A042BB9DB020080E161 /* Preview Assets.xcassets in Resources */,
-				A21BC10C2BC3312900C8946A /* Config in Resources */,
 				A2DB1A012BB9DB020080E161 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +407,9 @@
 				A2DB1A6A2BBB62B70080E161 /* SignUpViewModel.swift in Sources */,
 				A2DB1A512BBA1F780080E161 /* AuthManager.swift in Sources */,
 				A2DB1A5D2BBB28EE0080E161 /* MainView.swift in Sources */,
+				A21BC1122BC35CD400C8946A /* PostVIewModel.swift in Sources */,
 				296547D32BC1CDA000753FFA /* Recommended.swift in Sources */,
+				A21BC1142BC35D9300C8946A /* ImagePicker.swift in Sources */,
 				A2DB1A632BBB31540080E161 /* RecommendedView.swift in Sources */,
 				8546CC102BC178F800673362 /* Popular.swift in Sources */,
 				A2DB1A4D2BBA1EEC0080E161 /* LoginView.swift in Sources */,
@@ -587,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeX/Preview Content\"";
+				DEVELOPMENT_TEAM = G29Y4M6658;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnimeX/Info.plist;
@@ -600,7 +605,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Remote-Control-Allegators.AnimeX";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLE-DEVELOPMENT-TEAM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -616,6 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AnimeX/Preview Content\"";
+				DEVELOPMENT_TEAM = G29Y4M6658;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnimeX/Info.plist;
@@ -629,7 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Remote-Control-Allegators.AnimeX";
+				PRODUCT_BUNDLE_IDENTIFIER = "APPLE-DEVELOPMENT-TEAM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
