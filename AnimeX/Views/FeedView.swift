@@ -44,8 +44,10 @@ struct AnimeXPostView: View {
                     let isVideo = mimeType.starts(with: "video/")
                     
                     if isVideo {
-                            VideoPlayer(player: AVPlayer(url: contentFileURL))
-                                .frame(height: 200)
+//                        VideoPlayerWrapper(url: contentFileURL)
+//                                            .frame(height: 200)
+                        LazyVideoPlayer(url: contentFileURL)
+
                     } else {
                             AsyncImage(url: contentFileURL) { phase in
                                 switch phase {
@@ -91,6 +93,31 @@ struct AnimeXPostView: View {
             }
         }
         .padding()
+    }
+    
+    struct LazyVideoPlayer: View {
+        let url: URL
+        @State private var showVideoPlayer = false
+        
+        var body: some View {
+            Button(action: {
+                showVideoPlayer = true
+            }) {
+                ZStack {
+                    Image(systemName: "play.circle.fill")
+                        .font(.largeTitle)
+                        .opacity(0.8)
+                    
+                    if showVideoPlayer {
+                        VideoPlayer(player: AVPlayer(url: url))
+                            .frame(height: 200)
+                    }
+                }
+            }
+            .buttonStyle(PlainButtonStyle())
+            .frame(height: 200)
+            .background(Color.black.opacity(0.3))
+        }
     }
 }
 
