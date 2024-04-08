@@ -85,7 +85,7 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 ## Demo Day Video
 
-![Demo Day Video](https://www.youtube.com/watch?v=clp9g4Ut8tQ)
+[Demo Day Video](https://www.youtube.com/watch?v=clp9g4Ut8tQ)
 
 ## GIF
 
