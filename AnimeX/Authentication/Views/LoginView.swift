@@ -15,6 +15,11 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("AnimeX")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                
                 TextField("Username", text: $viewModel.username)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none)
