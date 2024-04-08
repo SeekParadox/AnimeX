@@ -83,6 +83,10 @@ AnimeX is a social media app designed for anime and manga fans to connect, share
 
 ![hand sketched wireframe](https://github.com/Remote-Control-Allegators/AnimeX/blob/main/wireframe.jpg)
 
+## Demo Day Video
+
+![Demo Day Video](https://www.youtube.com/watch?v=clp9g4Ut8tQ)
+
 ## GIF
 
 ### Unit 8
